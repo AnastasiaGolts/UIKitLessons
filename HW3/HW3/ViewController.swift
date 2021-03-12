@@ -32,6 +32,7 @@ class ViewController: UIViewController {
             
                 let text = alert.textFields?.first
                 self.hiLabel.text! += (text?.text!)! + ("!")
+                self.hiLabel.sizeToFit()
             }
         
             alert.addTextField { (textField) in
